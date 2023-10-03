@@ -1,0 +1,33 @@
+.main
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin: 40px 0 49px
+    &__title
+        width: 125px
+        color: $black
+        font-size: 47px
+        font-weight: 700
+    &__text
+        width: 155px
+        color: $black
+        font-size: 18px
+        font-weight: 500
+    &__links
+        writing-mode: vertical-lr
+        transform: rotate(180deg)
+    &__link
+        text-decoration: none
+        color: $gray
+        font-size: 16px
+        font-weight: 700
+        &_active, &:hover
+            color: $black
+        &:first-child:after
+            content: '|'
+            color: $black
+            margin-top: 4px
+    &__image
+            width: 100%
+            margin-bottom: 104px
